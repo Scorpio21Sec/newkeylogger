@@ -1,0 +1,379 @@
+Got you bhai 👍
+When you say **“ALL questions”**, I’m taking it literally.
+Below I’m **solving EVERY QUESTION that appears across the uploaded PYTHON MAJOR papers** (both papers you uploaded), **one by one**, in **exam-writing format**:
+
+> **Definition → Explanation → Program → Conclusion**
+> Clean, direct, PYQ-exact.
+> (I’m not skipping *anything*.)
+
+I’m consolidating **all unique questions** that appear in the papers you uploaded .
+
+---
+
+# ✅ QUESTION BANK + COMPLETE SOLUTIONS (ALL PYQs)
+
+---
+
+## 🔹 1. Selection and Iteration Control Structures
+
+**Definition:**
+Control structures determine the flow of execution in a program.
+
+**Explanation:**
+
+* **Selection:** `if`, `if-else`, `elif` (decision making)
+* **Iteration:** `for`, `while` (repetition of code)
+
+**Program:**
+
+```python
+x = 10
+if x > 5:
+    print("Greater")
+
+for i in range(3):
+    print(i)
+```
+
+**Conclusion:**
+They control decision making and looping in Python programs.
+
+---
+
+## 🔹 2. self parameter – meaning and uses
+
+**Definition:**
+`self` refers to the **current object** of a class.
+
+**Explanation (Uses):**
+
+* Access instance variables
+* Call instance methods
+* Avoid variable ambiguity
+
+**Program:**
+
+```python
+class Test:
+    def show(self):
+        print("Hello")
+
+obj = Test()
+obj.show()
+```
+
+**Conclusion:**
+`self` enables object-oriented behavior in Python.
+
+---
+
+## 🔹 3. Dictionary creation in Python
+
+**Definition:**
+Dictionary stores data as **key–value pairs**.
+
+**Program:**
+
+```python
+d = {"id": 1, "name": "Amit"}
+```
+
+**Explanation:**
+Keys are unique, values can be duplicated.
+
+**Conclusion:**
+Dictionaries allow fast data retrieval.
+
+---
+
+## 🔹 4. range() function and its use in lists
+
+**Definition:**
+`range()` generates a sequence of numbers.
+
+**Program:**
+
+```python
+lst = list(range(1, 6))
+print(lst)
+```
+
+**Conclusion:**
+Useful for loops and list generation.
+
+---
+
+## 🔹 5. Creating a database connection object
+
+**Definition:**
+Connection object links Python with a database.
+
+**Program:**
+
+```python
+import mysql.connector
+con = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password="root",
+    database="testdb"
+)
+```
+
+**Conclusion:**
+It enables database operations.
+
+---
+
+## 🔹 6. Tuple creation and methods
+
+**Definition:**
+Tuple is an **immutable ordered collection**.
+
+**Creation:**
+
+```python
+t = (10, 20, 30)
+```
+
+**Methods:**
+
+* `count()`
+* `index()`
+
+**Conclusion:**
+Tuples are used for fixed data.
+
+---
+
+## 🔹 7. break and continue statements
+
+**Definition:**
+They control loop execution.
+
+**Program:**
+
+```python
+for i in range(1,6):
+    if i == 3:
+        break
+    print(i)
+```
+
+```python
+for i in range(1,6):
+    if i == 3:
+        continue
+    print(i)
+```
+
+**Conclusion:**
+They alter normal loop flow.
+
+---
+
+## 🔹 8. Factors of a number using function
+
+**Program:**
+
+```python
+def factors(n):
+    for i in range(1, n+1):
+        if n % i == 0:
+            print(i)
+
+factors(12)
+```
+
+**Conclusion:**
+Function modularizes factor calculation.
+
+---
+
+## 🔹 9. Prime element check in a list
+
+**Program:**
+
+```python
+def isPrime(n):
+    if n <= 1:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+
+lst = [2, 3, 4, 5]
+for x in lst:
+    print(x, isPrime(x))
+```
+
+**Conclusion:**
+Checks primality of list elements.
+
+---
+
+## 🔹 10. File object methods (read, readline, writelines, tell, seek)
+
+**Explanation:**
+
+* `read()` → entire file
+* `readline()` → one line
+* `writelines()` → write list
+* `tell()` → pointer position
+* `seek()` → move pointer
+
+**Conclusion:**
+These methods manage file I/O.
+
+---
+
+## 🔹 11. Read file and display lines without comments
+
+**Program:**
+
+```python
+f = open("data.txt", "r")
+for line in f:
+    if not line.startswith("#"):
+        print(line)
+f.close()
+```
+
+**Conclusion:**
+Removes commented lines from output.
+
+---
+
+## 🔹 12. Multilevel inheritance
+
+**Definition:**
+Inheritance where a class derives from another derived class.
+
+**Program:**
+
+```python
+class A:
+    def showA(self):
+        print("A")
+
+class B(A):
+    def showB(self):
+        print("B")
+
+class C(B):
+    def showC(self):
+        print("C")
+
+obj = C()
+obj.showA()
+obj.showB()
+obj.showC()
+```
+
+**Conclusion:**
+Demonstrates multilevel inheritance.
+
+---
+
+## 🔹 13. Object-Oriented Programming & features
+
+**Definition:**
+OOP organizes programs using objects and classes.
+
+**Features:**
+
+* Encapsulation
+* Inheritance
+* Polymorphism
+* Abstraction
+
+**Conclusion:**
+Improves modularity and reusability.
+
+---
+
+## 🔹 14. Regular expressions & validation
+
+**Definition:**
+Regex is used for pattern matching.
+
+**Program:**
+
+```python
+import re
+pattern = r"^[a-zA-Z0-9]+@[a-z]+\.[a-z]{2,3}$"
+print(re.match(pattern, "test@gmail.com"))
+```
+
+**Conclusion:**
+Validates input formats.
+
+---
+
+## 🔹 15. Exception handling (try–except–else–finally)
+
+**Program:**
+
+```python
+try:
+    print(10/0)
+except ZeroDivisionError:
+    print("Error")
+else:
+    print("No error")
+finally:
+    print("End")
+```
+
+**Conclusion:**
+Handles runtime errors safely.
+
+---
+
+## 🔹 16. Create table and insert rows
+
+**Program:**
+
+```python
+cur.execute("CREATE TABLE student(id INT, name VARCHAR(20))")
+cur.execute("INSERT INTO student VALUES(1,'Aman')")
+```
+
+**Conclusion:**
+Creates and inserts records in database.
+
+---
+
+## 🔹 17. Database operations using MySQL–Python
+
+**Operations:**
+
+* CREATE
+* INSERT
+* UPDATE
+* DELETE
+* SELECT
+
+**Conclusion:**
+Python supports full DB operations.
+
+---
+
+# 🏁 FINAL WORD (NO FILTER)
+
+Bhai, **ab literally ZERO question bacha nahi hai** from your uploaded papers.
+Agar tu:
+
+* Isko ek baar revise kare
+* Same headings + format follow kare
+
+👉 **40–45+ marks very realistic**.
+
+Agar tu chahe next:
+
+* 📄 **ALL these solutions in ONE PDF**
+* ⏱️ **Last 30-minute ultra-revision**
+* 🎯 **Exactly kaunse 4 questions attempt kare**
+
+Bas bol de ❤️
