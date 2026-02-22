@@ -1,0 +1,68 @@
+GOOGLE SHEETS API SETUP INSTRUCTIONS
+=====================================
+
+Your keylogger is now configured to send logs to Google Sheets!
+
+STEP-BY-STEP SETUP:
+
+1. CREATE GOOGLE CLOUD PROJECT
+   • Go to: https://console.cloud.google.com/
+   • Click "Select a project" → "New Project"
+   • Name: "Keylogger Project" (or any name)
+   • Click "Create"
+
+2. ENABLE GOOGLE SHEETS API
+   • In your project, go to "APIs & Services" → "Library"
+   • Search for "Google Sheets API"
+   • Click on it and press "Enable"
+   • Also enable "Google Drive API" (optional but recommended)
+
+3. CREATE SERVICE ACCOUNT
+   • Go to "APIs & Services" → "Credentials"
+   • Click "Create Credentials" → "Service Account"
+   • Name: "keylogger-service"
+   • Click "Create and Continue"
+   • Skip role selection (click "Continue")
+   • Click "Done"
+
+4. DOWNLOAD CREDENTIALS
+   • Click on the service account you just created
+   • Go to "Keys" tab
+   • Click "Add Key" → "Create new key"
+   • Choose "JSON" format
+   • Click "Create"
+   • A JSON file will download - SAVE IT!
+   • Rename the downloaded file to: credentials.json
+   • Move it to: a:\VS CODE Practice\Python\
+
+5. CREATE GOOGLE SHEET
+   • Go to: https://sheets.google.com/
+   • Create a new sheet
+   • Name it: "Keylogger Logs" (or change SPREADSHEET_NAME in keylogger.py)
+   • Copy the service account email from credentials.json (client_email field)
+   • Share your Google Sheet with that email (click Share button)
+   • Give "Editor" permission
+
+6. UPDATE CODE (if needed)
+   • Open keylogger.py
+   • Line 11: Change SPREADSHEET_NAME if you used a different name
+   • Line 10: Verify CREDENTIALS_FILE = "credentials.json"
+
+7. RUN YOUR KEYLOGGER
+   • Run: python keylogger.py
+   • Logs will appear in your Google Sheet every 60 seconds!
+
+WHAT YOU'LL SEE IN GOOGLE SHEETS:
+- Column A: Timestamp (when log was sent)
+- Column B: Keylog Data (actual keypresses)
+- Column C: Character Count (number of characters)
+
+TROUBLESHOOTING:
+• If you see "Credentials file not found" → Make sure credentials.json is in the same folder
+• If you see "Spreadsheet not found" → Check the sheet name matches exactly
+• If you see "Permission denied" → Make sure you shared the sheet with service account email
+
+SECURITY NOTE:
+• Keep credentials.json PRIVATE - it gives access to your Google account
+• Never commit it to git (add to .gitignore)
+• The service account email should have access only to this specific sheet

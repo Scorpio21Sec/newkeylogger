@@ -1,0 +1,8 @@
+@echo off
+:loop 
+if exist D:\ (
+  timeout /t 5 >nul
+    goto loop
+) else (
+rundll32.exe user32.dll, LockWorkStation
+)
