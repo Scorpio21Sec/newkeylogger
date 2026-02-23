@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "keylogger-database",
+  "private_key_id": "13f0c3b13a4eb7b162a461117ca9665891cf0b8f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC+WYOlO6DATusV\nzMiiI1Se1jry4ByjxgPC5uj4xwxilH/nPkyNd6NUtshGs6ZKhhA9joHYgbZwnReQ\nBsYnTLD+yWeVtekHGvxSJsacFjsHvnhV0f8tWxJRVkWIMsSMFREfw7iHHQJvXAmH\naHqDucr8jaDQ56ybAt855ZOmLYoPz22UZXBSV0B5ZvL6fw0bg5Cd4Fj1xP1YMe04\nrLz29vFJhZ/Jscll31eVHX6Kf68OCkn7c+oKNV4g9vhWKearA6lwa3VCe8Ap+NCC\nDsJK7oUCNwvdIghwBm/N48/NxTSbL2dEcb64DWBeZigMXuiHxn4dyA+7tDW2mSHA\nhxktKROxAgMBAAECggEABlpEDik1OEPN/VFTOxOHJwGm8Bz+AbJ5pMkaanaQpY/X\njKzv5rsA28J5oL/tP2CV5UsGrvZFw6B/hUBPn8dDwy4PL6A1f6XlOLvn7hTBGbUf\n7JvMeovW+rlQit8IX5UyqArq8zHq91LU09S/HXsvcMIshTpNILN95g+RD9dGW7iJ\nbif+tUoK14Zu5lis0qaptDN5WWJ/9g6wiveGSD3CjJj8FUB9cbtf8wuh91vGEFc6\nJFLYPubS6s/G726FfLNWhuNSeqP0bZOJ0U/9L5mLSLEPPKjC5PglGrUzN5vGwoce\nRwgR86L4Vnxjo9JW6WJpBpRExj7pJ8QWc6zUtCoUoQKBgQD8HAa2FUwWSQS5VdNj\nO6NU1LKtPfcPrMeJ1WWdHN/nxCoWipO5+4+3GjAaGkTPp9TQzLE+2/7jxPkIlluP\n9rAgWE03RvZz0gE+FzaG7IG94n1yRKHiCUko3di+G/e06ZTW7rE6SNG/hzlKjdkm\nJSvplk7lUBHLaCpWd08VFmKXYQKBgQDBSYCMKZlygB4sEAHIIu4N9sLnq0TbbP+H\nXkQpbQNzBlDIjDSEa4KOkwOwJzHkJeydXZv/wOREfO6ce9Co6tiTJBbLyYkUXPII\nMm/T4/JY8SyGXgtCZjzAtDZL/4lDHdGviC4HoBnmeRaRZ50AiC58GOO7CvhNL3BE\nqvSCeBvuUQKBgQC+98/Rn2JKQzdT2IJOWb+II7HQ7u41rnBbpQzarSOiIQKsnn32\nVGrxjOHA9AMJtRzMqTDd57E1AWCOs65Z58hUR+79n0BSTVJpoRXJsF864dSaeQiS\n+uuzDBEBOJgzLvhyss4G02Amj5zDL528ek3AG/5ZT4SbKqVfZ/K8i39VIQKBgEVa\nNTiVeIx/8dOHjswb1GTIRJjReCxvSKRuq3BdwB4WhwfeXr2gwcCceXdMKPeer+6q\n9t1mfcEhPpCBUJY7ZaguC8vlLT1UODe+uSdDI+LL7ljsB4g0nNncD5tnPf4KBgHA\nkBuGU6TBj9puXgQh2OQIHjYvsnYnblYFLSRfKk5xAoGAMvHgCqYFadSmDzWOT4Bv\nyOYvlMhMQkDlpVXowjH0KpfuW0a0NTKP/8jHr8krxOfAOg63KHoefCs4LKkXVJLV\nvnDwJbwWjLr8JgB09DLHGmxsr93PmGCcHmydbNPql9EMuV3i7HpG0xsE0zCW7tP6\nnsoIkQoWmy61MVFd/jujtB0=\n-----END PRIVATE KEY-----\n",
+  "client_email": "keyloggerlogdatabase@keylogger-database.iam.gserviceaccount.com",
+  "client_id": "103618163960721488289",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/keyloggerlogdatabase%40keylogger-database.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

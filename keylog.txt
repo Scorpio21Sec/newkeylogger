@@ -1,0 +1,8 @@
+[2026-02-23 01:28:57] [SHIFT][SHIFT][SHIFT][SHIFT]Hi my name is prashant whats your name is [ESC]
+[2026-02-23 01:30:35] [SHIFT]Hi what is your name is [ENTER][ESC]
+[2026-02-23 01:42:19] [SHIFT][SHIFT]My name is prashant whats your name is[ENTER][ESC]
+[2026-02-23 08:30:44] ai model testing[ENTER]
+[2026-02-23 08:32:14] [CTRL]
+[2026-02-23 08:32:45] [SHIFT]I deve
+[2026-02-23 08:33:16] loped a types of analytics systenm[ENTER]
+[2026-02-23 08:34:35] [ESC]
