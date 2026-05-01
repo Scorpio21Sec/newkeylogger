@@ -6,7 +6,7 @@ type Props = {
   errorRate: number;
 };
 
-export function AIInsightsPanel({ speed, errorRate }: Props) {
+export function AIInsightsPanel({ speed = 0, errorRate = 0 }: Props) {
   const status = speed > 65 && errorRate < 5 ? "excellent" : "improving";
 
   return (
@@ -20,7 +20,7 @@ export function AIInsightsPanel({ speed, errorRate }: Props) {
         <h3 className="text-lg font-semibold">Typing pattern summary</h3>
         <p className="mt-2 text-sm text-slate-300">
           Your current performance profile is <span className="font-semibold text-cyan-200">{status}</span>.
-          Average speed is {speed.toFixed(1)} WPM while error rate remains at {errorRate.toFixed(1)}%.
+          Average speed is {(speed || 0).toFixed(1)} WPM while error rate remains at {(errorRate || 0).toFixed(1)}%.
         </p>
       </div>
     </Card>

@@ -15,13 +15,14 @@ import { Button } from "@/components/ui/button";
 import { Modal } from "@/components/ui/modal";
 import { useDashboardStore } from "@/store/dashboard-store";
 import { useGsapScroll } from "@/hooks/use-gsap-scroll";
+import { ProtectedRoute } from "@/components/auth/protected-route";
 
 const ChartsSection = dynamic(
   () => import("@/components/dashboard/charts-section").then((mod) => mod.ChartsSection),
   { ssr: false, loading: () => <DashboardLoading /> },
 );
 
-export default function Home() {
+function DashboardContent() {
   const [search, setSearch] = useState("");
   const [modalOpen, setModalOpen] = useState(false);
   const sectionRef = useRef<HTMLElement | null>(null);
@@ -126,5 +127,13 @@ export default function Home() {
         </Modal>
       </section>
     </DashboardShell>
+  );
+}
+
+export default function Home() {
+  return (
+    <ProtectedRoute>
+      <DashboardContent />
+    </ProtectedRoute>
   );
 }

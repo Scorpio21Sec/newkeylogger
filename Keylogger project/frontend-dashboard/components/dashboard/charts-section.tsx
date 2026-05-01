@@ -29,7 +29,7 @@ export function ChartsSection({ stats }: Props) {
     <section data-animate="section" className="grid grid-cols-1 gap-4 lg:grid-cols-12">
       <Card className="lg:col-span-6">
         <h3 className="mb-4 text-sm font-semibold text-slate-200">Activity over time</h3>
-        <div className="h-72">
+        <div className="h-72 w-full min-h-72 min-w-0">
           <ResponsiveContainer width="100%" height="100%">
             <LineChart data={stats.activityTrend}>
               <defs>
@@ -51,7 +51,7 @@ export function ChartsSection({ stats }: Props) {
 
       <Card className="lg:col-span-3">
         <h3 className="mb-4 text-sm font-semibold text-slate-200">Session comparison</h3>
-        <div className="h-72">
+        <div className="h-72 w-full min-h-72 min-w-0">
           <ResponsiveContainer width="100%" height="100%">
             <BarChart data={stats.sessionComparison}>
               <CartesianGrid strokeDasharray="3 3" stroke="#334155" />
@@ -66,7 +66,7 @@ export function ChartsSection({ stats }: Props) {
 
       <Card className="lg:col-span-3">
         <h3 className="mb-4 text-sm font-semibold text-slate-200">Distribution</h3>
-        <div className="h-72">
+        <div className="h-72 w-full min-h-72 min-w-0">
           <ResponsiveContainer width="100%" height="100%">
             <PieChart>
               <Pie
