@@ -1,0 +1,12 @@
+.vscode/settings.json
+keylog.txt
+keylogger.py
+requirements.txt
+keylogger-database-*.json
+extract_Cred.zip
+final_sensitive_data.csv
+*.pyc
+__pycache__/
+ML Project/
+frontend-dashboard/.next/
+frontend-dashboard/node_modules/
